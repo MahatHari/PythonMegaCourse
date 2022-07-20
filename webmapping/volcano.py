@@ -34,7 +34,7 @@ def return_color(elevation):
 for lt, ln, el, nm in zip(lat, lon, elv, name):
     iframe = folium.IFrame(html=html % (nm, el), width=250, height=100)
     fg.add_child(folium.Marker(location=[lt, ln],
-                 popup=folium.Popup(iframe), icon=folium.Icon(color=return_color(el))))
+                 popup=folium.Popup(iframe), icon=folium.Icon(color=return_color(el), )))
 
 
 map.add_child(fg)
