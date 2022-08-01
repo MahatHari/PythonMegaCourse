@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <form action="{%url 'translator_view' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-sm-6 mt-3 left">
+        <textarea name="my_textarea" rows="3" class="form-control">
+{{original_text|safe}} </textarea
+        >
+      </div>
+      <div class="col-sm-6 mt-3 left">
+        <textarea name="" rows="3" class="form-control">
+{{output_text}} </textarea
+        >
+        <input type="submit" class="btn btn-primary ml-3 mt-3" value="Submit" />
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock content %}
