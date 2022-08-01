@@ -1,3 +1,0 @@
-([('frontend',
-   '/Users/harimahat/Desktop/PythonMegaCourse/book-inventory-app/dist/frontend',
-   'EXECUTABLE')],)
