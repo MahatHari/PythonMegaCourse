@@ -1,5 +1,3 @@
-
-from enum import unique
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from send_email import send_email
