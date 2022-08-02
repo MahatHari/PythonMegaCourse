@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <title>Geo Coder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Geo Coder</h2>
+      <h3>
+        Please upload your csv file, The values containing address should be in
+        a colmun named <em>address</em> or <em>Address</em>
+      </h3>
+      <form
+        action="{{url_for('success_table')}}"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" accept=".csv" name="file" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="output">{{text|safe}} 
+  </body>
+</html>
